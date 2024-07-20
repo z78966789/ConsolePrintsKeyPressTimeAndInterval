@@ -52,6 +52,11 @@ LRESULT CALLBACK LowLevelKeyboardProc(_In_ int nCode, _In_ WPARAM wParam, _In_ L
 	return CallNextHookEx(g_lowLevelKeyboardHook, nCode, wParam, lParam);
 }
 
+LRESULT CALLBACK LowLevelMouseProc(_In_ int nCode, _In_ WPARAM wParam, _In_ LPARAM lParam)
+{
+
+}
+
 void º¯Êý()
 {
 	while (getchar() != '0')
